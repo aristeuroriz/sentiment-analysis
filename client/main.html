@@ -1,0 +1,44 @@
+<head>
+  <title>Sentiment</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <nav class="deep-purple lighten-1">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">Sentiment Analysis</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    {{> sentiment}}
+    {{> info}}
+  </div>
+</body>
+
+<template name="sentiment">
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="text" class="materialize-textarea"></textarea>
+          <label for="text">Escreva seu texto aqui...</label>
+        </div>
+      </div>
+      <!--
+      <button class="btn waves-effect btn-large waves-light" id="sentiment">Submeter
+        <i class="material-icons right">send</i>
+      </button>
+      -->
+    </form>
+    <div class="center-align">
+      <img class="responsive-img sentiment-icon" src="{{sentir}}" alt="{{sentir}}">
+    </div>
+  </div>
+</template>
+
+<template name="info">
+
+</template>
