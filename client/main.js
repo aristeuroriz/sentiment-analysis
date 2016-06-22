@@ -31,7 +31,7 @@ Template.sentiment.events({
 		event.preventDefault();
 		var text = $('#text').val();
 		console.log(text);
-		var sentiment = require('sentiment');
+		var sentiment = require('sentiment-ptbr');
 
 		var r1 = sentiment(text);
 
@@ -44,7 +44,7 @@ Template.sentiment.events({
     	event.preventDefault();
     	var text = $('#text').val();
     	console.log(text);
-    	var sentiment = require('sentiment');
+    	var sentiment = require('sentiment-ptbr');
 
     	var r1 = sentiment(text);
 
